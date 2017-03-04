@@ -4,11 +4,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Favorite Games</title>
+        <title>JSP Page</title>
     </head>
+    
+    <% String table = (String) request.getAttribute("table"); %>
+    
+    
     <body>
-        <h1>My Favorite Games</h1>
-        
-        <a href="read">View All Games</a>
+        <h1>Hello World!</h1>
+        <%= table %>
     </body>
 </html>
