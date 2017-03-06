@@ -51,10 +51,10 @@ public class ReadQuery {
     public void doRead() {
         
         try {
-            String query = "Select * from games";
+            String query = "Select * from FAV_BOARD_GAMES";
             
-            PreparedStatement pa = conn.prepareStatement(query);
-            this.results = pa.executeQuery();
+            PreparedStatement ps = conn.prepareStatement(query);
+            this.results = ps.executeQuery();
         
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
@@ -70,11 +70,11 @@ public class ReadQuery {
             while(this.results.next()) {
                 
                 Games game = new Games();
-                game.setGameID(this.results.getInt("gameID"));
-                game.setGameName(this.results.getString("gameName"));
-                game.setPlayerNum(this.results.getString("playerNum"));
-                game.setAgeRecommend(this.results.getString("ageRecommend"));
-                game.setLengthPlay(this.results.getString("lengthPlay"));
+                game.setGameID(this.results.getInt("GAMEID"));
+                game.setGameName(this.results.getString("GAMENAME"));
+                game.setPlayerNum(this.results.getString("NUMBEROFPLAYERS"));
+                game.setAgeRecommend(this.results.getString("AGERECOMMENDATION"));
+                game.setLengthPlay(this.results.getString("LENGTHOFPLAY"));
                 
                 
                 table += "<br>";
