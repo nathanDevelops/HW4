@@ -11,7 +11,7 @@
     
     
     <body>
-        <h1>Hello World!</h1>
+        <h1>List Of My Favorite Games</h1>
         <%= table %>
     </body>
 </html>
