@@ -98,6 +98,10 @@ public class ReadQuery {
                 table += game.getLengthPlay();
                 table += "</td>";
                 
+                table += "<td>";
+                table += "<a href=delete?gameID=" + game.getGameID() + "> Delete </a>";
+                table += "</td>";
+                
                 table += "</tr>";
             }
         } catch (SQLException ex) {
