@@ -10,25 +10,33 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add A New Game</title>
+        <link rel="stylesheet" type="text/css" href="gameCSS.css"/>
     </head>
     <body>
-        <h1>Add A New Game</h1>
+        <div class="center">
         
         <form name="addForm" action="addGame" method="get">
+            <h3>Add a New Game</h3>
+            <hr width="90%" color="white">
             
-            <label>Game Name:</label>
-            <input type="text" name="name" value="" />
             <br>
-            <label>Number of Players:</label>
-            <input type="text" name="players" value="" />
-            <br>
-            <label>Suggested Age:</label>
-            <input type="text" name="age" value="" />
-            <br>
-            <label>Length of Game:</label>
-            <input type="text" name="time" value="" />
-            <br>
-            <input type="submit" name="submit" value="submit" />
+            
+            
+                    <label>Game Name:</label>
+                        <input type="text" name="name" value="" size="20" />
+                    <br>
+                    <label>Number of Players:</label>
+                        <input type="text" name="players" value="" size="20" />
+                    <br>
+                    <label>Suggested Age:</label>
+                        <input type="text" name="age" value="" size="20" />
+                    <br>
+                    <label>Length of Game:</label>
+                        <input type="text" name="time" value="" size="20" />
+                        <br>
+                        <br>
+                    <input type="submit" name="submit" value="submit" />
         </form>
+        </div>
     </body>
 </html>

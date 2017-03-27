@@ -58,7 +58,7 @@ public class AddQuery {
     public void doAdd (Games game){
         
         try {
-            String query = "INSERT INTO games (gameName, playerNum, age, time) VALUES (?, ?, ?, ?)";
+            String query = "INSERT INTO fav_board_games (GAMENAME, NUMBEROFPLAYERS, AGERECOMMENDATION, LENGTHOFPLAY) VALUES (?, ?, ?, ?)";
             
             PreparedStatement ps = conn.prepareStatement(query);
             

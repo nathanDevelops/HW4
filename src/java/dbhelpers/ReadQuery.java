@@ -66,6 +66,30 @@ public class ReadQuery {
         String table = "";
         table += "<table border=1";
         
+            table += "<tr>";
+            table += "<th>";
+            table += "GameID";
+            table += "</th>";
+            
+            table += "<th>";
+            table += "Game Name";
+            table += "</th>";
+            
+            table += "<th>";
+            table += "# Players";
+            table += "</th>";
+            
+            table += "<th>";
+            table += "Recommened Age";
+            table += "</th>";
+            
+            table += "<th>";
+            table += "Length of Play";
+            table += "</th>";
+            
+            table += "</tr>";
+        
+        
         try {
             while(this.results.next()) {
                 

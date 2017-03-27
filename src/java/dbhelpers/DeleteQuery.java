@@ -58,7 +58,7 @@ public class DeleteQuery {
         
         try {
             //set up a string to hld our query
-            String query = "DELETE FROM games WHERE gameID = ?";
+            String query = "DELETE FROM fav_board_games WHERE gameID = ?";
             
             //create a preparedstatemnt using our query string
             PreparedStatement ps = conn.prepareStatement(query);
