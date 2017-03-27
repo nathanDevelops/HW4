@@ -35,7 +35,9 @@
                         <input type="text" name="time" value="" size="20" />
                         <br>
                         <br>
+                    <div style="text-align: center">
                     <input type="submit" name="submit" value="submit" />
+                    </div>
         </form>
         </div>
     </body>

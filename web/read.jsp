@@ -14,8 +14,8 @@
     <body>
         <h1>List Of My Favorite Games</h1>
         <%= table %>
-        
+        <div style="text-align: center">
         <a href ="add">Add A New Games</a>
-        
+        </div>
     </body>
 </html>
