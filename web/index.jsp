@@ -8,9 +8,14 @@
         <link rel="stylesheet" type="text/css" href="gameCSS.css"/>
     </head>
     <body>
-        <h1>My Favorite Games</h1>
-        <div style="text-align: center">
-        <a href="read">View All Games</a>
+        <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+            
+            
+            <%@ include file="includes/footer.jsp" %>
         </div>
     </body>
 </html>

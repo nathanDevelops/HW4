@@ -13,13 +13,20 @@
         <link rel="stylesheet" type="text/css" href="gameCSS.css"/>
     </head>
     <body>
-        <div class="center">
-        
-        <form name="addForm" action="addGame" method="get">
-            <h3>Add a New Game</h3>
-            <hr width="90%" color="white">
+        <div class="wrap">
             
-            <br>
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+            
+            <div class="main">
+                <div class="center">
+
+                <form name="addForm" action="addGame" method="get">
+                    <h3>Add a New Game</h3>
+                    <hr width="90%" color="white">
+
+                    <br>
             
             
                     <label>Game Name:</label>
@@ -38,7 +45,10 @@
                     <div style="text-align: center">
                     <input type="submit" name="submit" value="submit" />
                     </div>
-        </form>
+            </form>
+            </div>
+        </div>
+            <%@ include file="includes/footer.jsp" %>
         </div>
     </body>
 </html>
